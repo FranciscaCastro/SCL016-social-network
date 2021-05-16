@@ -1,5 +1,7 @@
 import { footer } from '../componentes/footer.js';
 import { header } from '../componentes/header.js';
+import { userName } from '../lib/index.js';
+
 
 export const profile = () => {
   // <!-- PAGINA DE PERFIL -->
@@ -13,7 +15,7 @@ export const profile = () => {
       </figure>
     </div>
     <div id="infPersonal">
-     <h4>Nombre</h4>
+     <h4 id='name'></h4>
      <h4>Ciudad de Residencia</h4>
      <h4>Extra</h4>
     </div>
@@ -21,7 +23,7 @@ export const profile = () => {
     <hr>
     <div id="memorialsCreated">
       <h3>Memoriales Creados</h3>
-      <img src="IMAGES/Luci.png" alt="memorialsCreatedLucy">
+      <img src="IMAGES/Luci.png" alt="memorialsCreatedLucy" id="Lucy">
       <img src="IMAGES/imagen 1.png" alt="memorialCreatedEstellaT">
       <img src="IMAGES/imagen 2.png" alt="memorial CreadoOliviaH">
       <img src="IMAGES/Group 1.png" alt="createdMemorial">
@@ -45,6 +47,12 @@ export const profile = () => {
   divProfileContainer.appendChild(header());
   divProfileContainer.appendChild(divProfile);
   divProfileContainer.appendChild(footer());
+  userName();
 
+  const btnMemorial = divProfile.querySelector('#Lucy');
+  btnMemorial.addEventListener('click', () => {
+    window.location.hash = '#/memorial';
+  })
   return divProfileContainer;
 };
+

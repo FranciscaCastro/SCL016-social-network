@@ -49,8 +49,8 @@ export const loginScreen = () => {
   btnRegisterGo.addEventListener('click', () => {
     const mail = document.getElementById('mailInput').value;
     const pass = document.getElementById('passInput').value;
-    const name = document.getElementById('nameInput').value;
-    register(mail, pass);
+    const user = document.getElementById('nameInput').value;
+    register(mail, pass)
   });
   // INICIO SESION CON CORREO Y CONTRASEÑA
   const btnLoginGo = divLogin.querySelector('#btnLogin');

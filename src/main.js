@@ -16,7 +16,10 @@ const init = () => {
     appId: '1:981149743720:web:34b1feb31b39e2c79399dd',
     measurementId: 'G-TCN7LTTV55',
   };
+
   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
   window.location.hash = '#/login';
 };
 window.addEventListener('load', init);
+
