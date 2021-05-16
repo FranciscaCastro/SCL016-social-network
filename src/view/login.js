@@ -11,19 +11,19 @@ export const loginScreen = () => {
 <section id="loginContent">
  <div class="enterPage">
    <button id="btnMail" class="mailButton btnDesignI">Iniciar con correo electrónico</button>
-   <button id="btnGoogle" class="googleButton btnDesignI">Iniciar sesión con Google</button>
-   <button id="btnRegister" class="registerButton">Registrarse </button>
+   <button id="btnGoogle" class="googleButton btnDesignI"> <img src="./IMAGES/GOOGLE LOGO.png" class="googleLogo" alt=""> Iniciar sesión con Google</button>
+   <button id="btnRegister" class="registerButton btnDesignII" >Registrarse </button>
  </div>
  <div id="login" class="loginButtons">
-   <input type="email" id="mailLogin" placeholder="Correo electrónico">
-   <input type="password" id="passLogin" placeholder="Contraseña">
-   <button id="btnLogin" class="btnLogin">Ir</button>
+   <input type="email" id="mailLogin" class="pressedButtons" placeholder="Correo electrónico">
+   <input type="password" id="passLogin" class="pressedButtons" placeholder="Contraseña">
+   <button id="btnLogin" class="btnLogin pressedButtonsGo">Ir</button>
  </div>
  <div id="register" class="registerButtons">
-   <input type="email" id="mailInput" class="mailRegister" placeholder="Correo Electrónico">
-   <input id="nameInput" class="nameRegister" placeholder="Nombre y Apellido">
-   <input type= "password" id="passInput" class="passRegister" placeholder="Contraseña">
-   <button id="btnGo" class="btnGo">Ir</button>
+   <input type="email" id="mailInput" class="mailRegister pressedButtons" placeholder="Correo Electrónico">
+   <input id="nameInput" class="nameRegister pressedButtons" placeholder="Nombre y Apellido">
+   <input type= "password" id="passInput" class="passRegister pressedButtons" placeholder="Contraseña">
+   <button id="btnGo" class="btnGo pressedButtonsGo">Ir</button>
  </div>
 </section>
 `;

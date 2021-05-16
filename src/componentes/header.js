@@ -21,7 +21,7 @@ export const header = () => {
         </div>
       </li>
       <li><img src="IMAGES/SMALL LOGO.png" class="headerLogo" width="90" alt="Logo "></li>
-      <li><i class="fas fa-search fa-lg "></i> <i class="fas fa-bell fa-lg" ></i></li>
+      <li class="icons"><i class="fas fa-search fa-lg "></i> <i class="fas fa-bell fa-lg" ></i></li>
     </ul>
   </nav>
 </header>

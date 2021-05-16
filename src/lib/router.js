@@ -2,7 +2,7 @@
 import { loginScreen } from '../view/login.js';
 import { profile } from '../view/profile.js';
 import { memorial } from '../view/memorial.js';
-import { postsScreen } from '../view/posts.js'
+import { postsScreen } from '../view/posts.js';
 // import {} from '../view/posts.js';
 
 export const changeRoute = (hash) => {

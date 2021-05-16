@@ -1,16 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap'); /*tipografia logo*/
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 main {
   display: flex;
+  flex-direction: column;
+}
+.viewProfile{
+  height: 80vh;
+}
+.circleImg{
+  padding-left: 7%;
+}
+.creationProfile{
+  display: flex;
+  padding-left: 0%;
+  padding-top: 5%;
+  padding-bottom: 7%;
+  align-items: center;
+}
+
+.infProfile{
+  padding-left: 3%;
 }
 
 h3 {
-    font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif;
+  padding: 7%;
+  font-size: 130%;
+}
+
+h4{
+  font-family: 'Cormorant Garamond', serif;  
+  padding-bottom:7%;
+  font-size: 100%;
+}
+
+h5{
+  font-family: 'Cormorant Garamond', serif;  
+  padding:6%;
+}
+.imagesM{
+    display: flex;
+    justify-content: space-around;
 }
 
 .container {
@@ -22,8 +57,19 @@ h3 {
     cursor: pointer;
 }
 
+/* HEADER */
 header {
     background: linear-gradient(180deg, rgba(217, 198, 206, 0.93847) 0%, #FFFFFF 100%);
+    height: 13vh;
+}
+
+.icons{
+    margin-right: 7%;
+}
+
+.fa-bell:before {
+    content: "\f0f3";
+    padding: 50%;
 }
 
 .submenu {
@@ -48,13 +94,15 @@ container:hover .submenu {
   visibility: visible;
 }
 
+/* LINEAS ENTRE CONTENEDORES */
 hr {
     border-top: rgba(0, 0, 0, 0.5);
 }
-
+/* FOOTER */
 footer {
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
+    height: 7vh;
 }
 
 /* LOGIN REGISTRO */
@@ -63,6 +111,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    height: 40vh;
 }
 
 #loginContent {
@@ -70,20 +119,23 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 #infiniteLogo {
     width: 8rem;
+    margin-top: 2rem;
 }
 
 #title {
-    font-family: 'Cormorant Garamond', serif, bold;
-    font-size: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 
 #slogan {
     font-family: 'Cormorant Garamond', serif, bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #btnManifiesto {
@@ -92,7 +144,12 @@ footer {
     background-color: #FFFFFF;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    margin-left: 30%;
+    margin-left: 18%;
+    width: 130px;
+    height: 23.11px;
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    border-radius: 22px;
 }
 
 .ViewContainer {
@@ -102,6 +159,7 @@ footer {
     background-size: cover;
     height: 100vh; 
 }
+
 .profileContainer{
     height: 100vh;
 }
@@ -120,19 +178,36 @@ footer {
     align-items: center;
     flex-direction: column;
 }
-
-/* .btnDesignI {
-    margin: 2px;
+.btnDesignI, .btnDesignII {
+    margin: 7px;
     border-radius: 10px;
-    Opacity: 100%;
+    Opacity: 96%;
     mix-blend-mode: Normal;
     filter: drop-shadow(2px 6px 5px rgba(0, 0, 0, 0.4));
-    position: absolute;
-width: 276px;
-height: 50px;
-left: 69px;
-top: 374px;
+    width: 230px;
+    height: 40px;
+    font-size: 13px;
+    border-style: none;
+    border-image: none;
+}
 
+.btnDesignI:hover {
+    text-decoration: none;
+    color: black;
+    background-color:white;
+}
+
+.btnDesignII:hover {
+    text-decoration: none;
+    color: black;
+    background-color:#C564A9;
+}
+
+.googleLogo{
+    width: 18px;
+}
+
+<<<<<<< HEAD
 } */
 
 .modal {
@@ -143,3 +218,115 @@ top: 374px;
     flex-direction: column;
     z-index: 2;
 }
+=======
+.btnDesignII {
+    background: #D8C3D2;
+}
+
+.pressedButtons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 186px; 
+    height: 30px;
+    background: rgba(216, 195, 210, 0.79);
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    border-radius: 7px;
+    margin: 6px;
+}
+
+.pressedButtonsGo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 82px; 
+    height: 30px;
+    background: rgba(216, 195, 210, 0.79);
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    border-radius: 7px;
+    margin: 6px;
+}
+
+#postContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15%;
+  
+}
+#postText{
+    width: 85%;
+}
+
+/* MEMORIAL PAGE */
+
+.ViewMemorial {
+    margin: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.imagesMemorial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imgMemorial {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.circleProfilePhoto{
+    border-radius: 50%;
+    width: 8rem;
+    margin-left: -0.8rem;
+}
+
+#profileElements {
+    display: flex;
+    margin: 1rem;
+}
+
+#infoText {
+    padding-left: 0.8rem;
+    margin-top: -1rem;
+}
+
+.quoteMemorial {
+    font-style: oblique;
+}
+
+.title {
+    padding: 0.5rem;
+}
+
+.titleMemorial{
+    display: flex;
+    margin-right: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* POSTS PAGE */
+#postsElements {
+    display: flex;
+    margin: 1rem;
+}
+
+.postedPicture {
+    width: 90vw;
+}
+
+.flower {
+    margin-left: 19rem;
+}
+>>>>>>> 6542b6ea6c0a3f3e58a46918416e5d6ee37f32d4
