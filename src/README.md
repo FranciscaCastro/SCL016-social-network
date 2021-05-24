@@ -18,108 +18,34 @@ Nuestra red social se llama "Saudade", inspirada en la palabra de origen portugu
 
 ## 2. Descripción del proyecto
 
-En la plataforma podemos registrarnos para crear un perfil personal, a través del que creamos "Memoriales". Las personas pueden solicitar unirse a dichos Memoriales como parte de los vínculos 
+En la plataforma podemos registrarnos para crear un perfil personal, a través del que creamos "Memoriales". Las personas pueden solicitar unirse a dichos Memoriales para poder acceder a los recuerdos que otras personas hagan en el Memorial, así como compartir sus propios recuerdos a modo de Fotografías o Relatos. Al mismo tiempo, es posible dejar Flores a modo de reinterpretación del "Like" presente en las redes sociales actuales.
 
-## 3. Objetivos de aprendizaje
+## 3. Descripción de usuario y prototipos
 
-El objetivo principal de aprendizaje de este proyecto es construir una
-[Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application)
-[_responsive_](../../topics/css/02-responsive) (con más de una vista / página)
-en la que podamos **leer y escribir datos.**
+Pensamos que el usuario de nuestra red social es un adulto cuyo objetivo sea compartir los recuerdos con las personas que conoció, que además busca un lugar específico fuera de las redes sociales tradicionales. 
+Lo primero a considerar es que tenemos encontrar rápidamente las redes que buscamos para poder acceder a los Memoriales. Seguiremos la navegación normal de las redes sociales, pero enfocamos el contenido importante en el área del Memorial, ahí es donde ocurre toda la interacción. 
 
-### HTML y CSS
+Primer prototipo en papel.
+![img](https://raw.githubusercontent.com/barbarasagredo/SCL016-social-network/Barbara/public/IMAGES/bajafidelidad.jpeg)
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [ ] [Uso de CSS Grid Layout](https://css-tricks.com/snippets/css/complete-guide-grid/)
+Al ser un lugar donde se compartan recuerdos con una temática sensible, pensamos que la página debe tener una paleta de colores suaves y para ello consultamos con distintas personas sobre propuestas de diseño  que incluyeron todas las vistas de la página.
 
-### DOM y Web APIs
+Vista de la página principal de inicio de sesión o registro. 
+![img](https://raw.githubusercontent.com/barbarasagredo/SCL016-social-network/Barbara/public/IMAGES/TEST%20HOME%20BACKGROUND.jpg)
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM (addEventListener, removeEventListener,
-Event objeto, delegación de eventos)
-* [ ] [Manipulación dinámica del DOM](
-  https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-(appendChild | createElement | createTextNode | innerHTML | textContent | etc.)
-* [ ] Implementación de routing ([History API.](
-  https://developer.mozilla.org/es/docs/DOM/Manipulando_el_historial_del_navegador
-  ) | `hashchange`)
+Vista pruebas de Color Space para páginas de navegación. 
+![img](https://raw.githubusercontent.com/barbarasagredo/SCL016-social-network/Barbara/public/IMAGES/TEST%20COLOR%20SPACE.jpg)
 
-### JavaScript
+Vista de los botones de Inicio de sesión o registro.
+![img](https://raw.githubusercontent.com/barbarasagredo/SCL016-social-network/Barbara/public/IMAGES/OTHER%20TEST.jpg)
 
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Manipular arrays (filter | map | sort | reduce)
-* [ ] Manipular objects (key | value)
-* [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-| [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] Diferenciar entre expression y statements.
-* [ ] Diferenciar entre tipos de datos atómicos y estructurados.
-* [ ] [Uso de callbacks.](https://developer.mozilla.org/es/docs/Glossary/Callback_function)
-* [ ] [Consumo de Promesas.](https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises)
+## 4. Páginas a trabajar
 
-### Testing
+Prototipo de alta fidelidad en Figma.
+https://www.figma.com/proto/eaHeqtBfhcxKCfqmiKrvOO/III.-Social-network---Memorial?node-id=123%3A6&scaling=scale-down&page-id=0%3A1
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
-* [ ] [Testeo asíncrono.](https://jestjs.io/docs/es-ES/asynchronous)
-* [ ] [Uso de librerias de Mock.](https://jestjs.io/docs/es-ES/manual-mocks)
+El prototipo de alta fidelidad tiene consideradas algunas interacciones que para los efectos de conseguir los objetivos de aprendizaje fueron ignoradas en el desarrollo del código.
 
-### Estructura del código y guía de estilo
-
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
-
-### Git y Github
-
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-* [ ] Colaboración en Github (branches | pull requests | |tags)
-* [ ] Organización en Github (projects | issues | labels | milestones)
-
-### Firebase
-
-* [ ] [Firestore.](https://firebase.google.com/docs/firestore)
-* [ ] [Firebase Auth.](https://firebase.google.com/docs/auth/web/start)
-* [ ] [Firebase security rules.](https://firebase.google.com/docs/rules)
-* [ ] Observadores. ([onAuthStateChanged](https://firebase.google.com/docs/auth/web/manage-users?hl=es#get_the_currently_signed-in_user)
- | [onSnapshot](https://firebase.google.com/docs/firestore/query-data/listen#listen_to_multiple_documents_in_a_collection))
-
-### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
-
-## 4. Consideraciones generales
-
-* Este proyecto se debe trabajar en equipos de tres.
-
-* La lógica del proyecto debe estar implementada completamente en JavaScript
-  (ES6+), HTML y CSS :smiley:. Para este proyecto **no está permitido** utilizar
-  _frameworks_ o librerías de CSS y JS.
-
-* La división y organización del trabajo debe permitir, sin excepciones, que
-  **cada integrante** del equipo practique el aprendizaje de todo lo involucrado
-  en **cada historia**. _No se dividan el trabajo como en una fábrica._
-  - ¿Hasta acá has avanzado en tus proyectos con cierta fluidez y sin mayores
-    problemas? Sé generosa con tus compañeras, permíteles aprender y practicar
-    sin restricciones, aunque tome un poco más de tiempo. Aproveha de
-    _coachearlas_, de hacer _pair programming_, una de las mejores maneras de
-    aprender es explicando verbalmente.
-
-  - ¿Se te está haciendo difícil y te cuesta un poco más avanzar? No te quedes
-    con las partes "fáciles" del proyecto, conversa, negocia, exige tu oportunidad
-    para practicar y aprender lo que se te hace más difícil.
-
-* Solamente pueden trabajar en una única historia por vez, no pueden avanzar a
-  la siguiente sin haber completado la anterior. La historia se completa cuando
-  se cumplen **todos** sus Criterios de Aceptación + **toda** su Definición
-  de Terminado.
-
-Para comenzar tendrás que hacer un _fork_ y _clonar_ este repositorio.
 
 ## 5. Criterios de aceptación mínimos del proyecto
 

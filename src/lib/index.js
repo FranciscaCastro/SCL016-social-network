@@ -40,12 +40,9 @@ export const register = (mail, pass) => {
 export const access = (email, password) => {
   firebase.auth().signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      const user = userCredential.user;
       window.location.hash = '#/profile';
     })
     .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
       alert('Correo electrónico o contraseña inválido');
     });
 };
@@ -82,6 +79,47 @@ export const userName = (user) => {
         });
     }
   });
+};
+
+// POST
+export const addPost = (user, post) => {
+  firebase.firestore().collection('publications').add({
+    date: new Date().toLocaleString(),
+    text: post.value,
+    uid: user.uid,
+    email: user.email,
+    name: user.displayName,
+    likes: 0,
+  })
+    .then((result) => console.log(result))
+    .catch(error => console.log(error));
+};
+
+export const likes = (uid) => {
+  firebase.firestore().collection('publications').doc(uid).get()
+    .then((doc) => {
+      // const user = firebase.auth().currentUser;
+      // const userId = user.uid
+      // if ((doc.data()).includes(uid)) {
+      //   console.log(doc.data())
+      // }
+      const increaseFlowers = firebase.firestore.FieldValue.increment(1);
+      firebase.firestore().collection('publications').doc(uid).update({
+        likes: increaseFlowers,
+      });
+      console.log('liked');
+    });
+};
+
+export const deletePost = (uid) => {
+  firebase.firestore().collection('publications').doc(uid).delete()
+    .then(() => {
+      console.log('¡Entrada eliminada!');
+      alert('¡Entrada eliminada!')
+    })
+    .catch((error) => {
+      alert('No fue posible eliminar la entrada :(')
+    });
 };
 
 // FUNCIÓN PARA GUARDAR CONTENIDO EN FIRESTORE CLOUD

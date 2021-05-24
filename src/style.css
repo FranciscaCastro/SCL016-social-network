@@ -98,6 +98,7 @@ container:hover .submenu {
 hr {
     border-top: rgba(0, 0, 0, 0.5);
 }
+
 /* FOOTER */
 footer {
     font-family: 'Cormorant Garamond', serif;
@@ -207,18 +208,6 @@ footer {
     width: 18px;
 }
 
-<<<<<<< HEAD
-} */
-
-.modal {
-    display: none;
-    width: 60vw;
-    height: 60vh;
-    background-color: lavender;
-    flex-direction: column;
-    z-index: 2;
-}
-=======
 .btnDesignII {
     background: #D8C3D2;
 }
@@ -326,7 +315,87 @@ footer {
     width: 90vw;
 }
 
-.flower {
-    margin-left: 19rem;
+.flowers {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow:  row wrap;
 }
->>>>>>> 6542b6ea6c0a3f3e58a46918416e5d6ee37f32d4
+.flower {
+    margin-left: 10rem;
+}
+
+
+.commentsBox {
+    margin-bottom: 2rem;
+}
+
+#postText {
+  width: 85%;
+}
+
+#postContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 15%;
+}
+
+.viewPosts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.styleCrudButtons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.crudBtn {
+    background-color: transparent;
+    color: #B6A2B0;
+    border-style: none;
+    padding: 0rem;
+    margin: 0.3rem;
+    font-family: 'Cormorant Garamond';
+}
+
+.styleComments{
+    display: inline;
+    text-align: justify;
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 590;
+}
+
+span.username {
+    font-weight: bolder;
+    color: #D8C3D2;
+    font-family: 'Cormorant Garamond, serif';
+}
+
+span.a {
+    font-weight: bolder;
+    font-family: 'Cormorant Garamond, serif';
+    opacity: 50.9%;
+    font-size: x-small;
+}
+
+.postButton {
+  background-color: #B6A2B0;
+  color: #FFFFFF;
+  border-style: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 0.5rem;
+  font-family: 'Cormorant Garamond';
+}
+
+.divComments {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 1.5rem;
+}

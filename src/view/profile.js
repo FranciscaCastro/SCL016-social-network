@@ -60,11 +60,6 @@ export const profile = () => {
   btnMemorial.addEventListener('click', () => {
     window.location.hash = '#/memorial';
   });
-
-  const btnMemorial = divProfile.querySelector('#Lucy');
-  btnMemorial.addEventListener('click', () => {
-    window.location.hash = '#/memorial';
-  })
   return divProfileContainer;
 };
 
